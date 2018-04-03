@@ -21,18 +21,19 @@ This miner is free-to-use with developer fee is 1%. Miner mines for 36 seconds o
 
 Example:
 ```
-veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536
+veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536 0
 ```
 
 Template:
 ```
-veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PoolUrl>
+veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <PoolUrl>
 ```
 * DeviceIds is optional an defaults to ALL. Use list for not ALL: 0,1,2,3,4,5,6,7
 * BlockSize is optional and defaults to 64.
 * NumBlocks is optional and defaults to 96.
 * RandomSeed is optional. Set this if you want multiple miners using the same address to avoid nonce collisions.
 * SuffixMax optional and defaults to 65536.
+* PlatformId optional and defaults to 0.
 * PoolUrl is optional and defaults to http://amoveopool2.com/work
 
 
@@ -70,5 +71,5 @@ tar -xzvf veominer_Ubuntu_1.1.tar.gz
 
 Example:
 ```
-./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536
+./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536 0
 ```
