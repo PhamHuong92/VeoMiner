@@ -63,7 +63,7 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 ### Install release
 
 ```
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.1/veominer_Ubuntu_1.2.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.2/veominer_Ubuntu_1.2.tar.gz
 tar -xzvf veominer_Ubuntu_1.2.tar.gz
 ```
 
