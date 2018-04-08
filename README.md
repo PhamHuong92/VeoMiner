@@ -1,7 +1,7 @@
 # VeoMiner
 Amoveo mining with OpenCL for NVidia and AMD GPU. Many GPU for single miner process. Low CPU needed for many GPU.
 
-This miner is free-to-use with developer fee is 1%. Miner mines for 36 seconds of each hour for developer.
+This miner is free-to-use with developer fee is 2%. Miner mines for 72 seconds of each hour for developer.
 
 ## Windows
 
