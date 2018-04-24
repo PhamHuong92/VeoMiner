@@ -26,7 +26,7 @@ veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9D
 
 Template:
 ```
-veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <PoolUrl>
+veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <AutoLocal> <PoolUrl>
 ```
 * DeviceIds is optional an defaults to ALL. Use list for not ALL: 0,1,2,3,4,5,6,7
 * BlockSize is optional and defaults to 64.
@@ -34,6 +34,7 @@ veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixM
 * RandomSeed is optional. Set this if you want multiple miners using the same address to avoid nonce collisions.
 * SuffixMax optional and defaults to 65536.
 * PlatformId optional and defaults to 0.
+* AutoLocal optional and defaults to false. Try set true. Some faster. Some slower.
 * PoolUrl is optional and defaults to http://amoveopool2.com/work
 
 
@@ -63,8 +64,8 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 ### Install release
 
 ```
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.2/veominer_Ubuntu16_1.2.tar.gz
-tar -xzvf veominer_Ubuntu16_1.2.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.3/veominer_Ubuntu16_1.3.tar.gz
+tar -xzvf veominer_Ubuntu16_1.3.tar.gz
 ```
 
 ### Run
