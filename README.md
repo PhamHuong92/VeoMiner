@@ -26,7 +26,7 @@ veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9D
 
 Template:
 ```
-veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <AutoLocal> <PoolUrl>
+veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <AutoLocal> <PoolUrl> <SyncKernel>
 ```
 * DeviceIds is optional an defaults to ALL. Use list for not ALL: 0,1,2,3,4,5,6,7
 * BlockSize is optional and defaults to 64.
@@ -36,7 +36,7 @@ veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixM
 * PlatformId optional and defaults to 0.
 * AutoLocal optional and defaults to false. Try set true. Some faster. Some slower.
 * PoolUrl is optional and defaults to http://amoveopool2.com/work
-
+* SyncKernel is optional. Default is false. Make multiple GPU kernel run synchronous. Most time bad.
 
 ## Linux
 
@@ -64,8 +64,8 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 ### Install release
 
 ```
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.3/veominer_Ubuntu16_1.3.tar.gz
-tar -xzvf veominer_Ubuntu16_1.3.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.3/veominer_Ubuntu16_1.4.tar.gz
+tar -xzvf veominer_Ubuntu16_1.4.tar.gz
 ```
 
 ### Run
