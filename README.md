@@ -3,6 +3,8 @@ Amoveo mining with OpenCL for NVidia and AMD GPU. Many GPU for single miner proc
 
 This miner is free-to-use with developer fee is 2%. Miner mines for 72 seconds of each hour for developer.
 
+IMPORTANT AMD NOTE: Most AMD GPU need set SyncKernel argument true. SyncKernel is final argument on list.
+
 ## Windows
 
 ### NVidia Run Dependencies
