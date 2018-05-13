@@ -1,9 +1,16 @@
 # VeoMiner
-Amoveo mining with OpenCL for NVidia and AMD GPU. Many GPU for single miner process. Low CPU needed for many GPU.
+Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This miner is free-to-use with developer fee minimum 1%, default 2%.
 
-This miner is free-to-use with developer fee is 2%. Miner mines for 72 seconds of each hour for developer.
-
-IMPORTANT AMD NOTE: Most AMD GPU need set SyncKernel argument true. SyncKernel is final argument on list.
+## FAQ
+* My AMD rigs lock up or crash. Why?
+  - Most AMD GPU need to set SyncKernel argument true. Set SyncKernel like this: sk=1
+* Which arguments control hash rates?
+  - BlockSize: d=?
+  - NumBlocks: n=?
+  - AutoLocal: a=0 or a=1
+  - KernelVersion: kv=3 Was a previous veominer faster for you? Try kv=2 or kv=1
+* Why was an older version of veominer was faster?
+  - Kernel optimizations are not faster for every GPU. If an older veominer was faster for your GPU rig, set kv=2 or kv=1
 
 ## Windows
 
@@ -21,12 +28,32 @@ IMPORTANT AMD NOTE: Most AMD GPU need set SyncKernel argument true. SyncKernel i
 
 ### Run
 
-Example:
+Example 2.0 and up:
+```
+veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= b=128 n=128 p=0 d=all
+```
+
+Template 2.0 and up:
+```
+veominer.exe <MinerAddress>.<OptionalWorkerId> <Option>=<OptionValue>
+```
+* DeviceIds: Default is ALL, d=0,1,2,3,4 or d=all
+* BlockSize: Default is 64. b=64
+* NumBlocks: Default is 100. n=100
+* SuffixMax: Default is 65536. s=65536
+* PlatformId: Default is 0. p=0
+* AutoLocal: Default is false. a=false or a=true
+* PoolUrl: Default is http://amoveopool2.com/work   u=http://amoveopool2.com/work
+* KernelVersion: Default is 3. Available 1, 2, or 3. kv=3
+* DevFeePercent: Default is 2. Available 1 and up. df=2
+* RandomSeed: Deafult is Computer Name + Current Time. r=RaNdOmStRiNg
+
+Example 1.5 and below:
 ```
 veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536 0
 ```
 
-Template:
+Template 1.5 and below:
 ```
 veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixMax> <PlatformId> <AutoLocal> <PoolUrl> <SyncKernel>
 ```
@@ -66,13 +93,18 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 ### Install release
 
 ```
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/1.3/veominer_Ubuntu16_1.5.tar.gz
-tar -xzvf veominer_Ubuntu16_1.5.tar.gz
+- Ubuntu16
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.0/veominer_Ubuntu16_2.0.tar.gz
+tar -xzvf veominer_Ubuntu16_2.0.tar.gz
+
+- Ubuntu17
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.0/veominer_Ubuntu17_2.0.tar.gz
+tar -xzvf veominer_Ubuntu17_2.0.tar.gz
 ```
 
 ### Run
 
 Example:
 ```
-./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= 0,1,2,3 192 128 SEED 65536 0
+./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= b=128 n=128 p=0 d=all
 ```
