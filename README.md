@@ -44,6 +44,7 @@ veominer.exe <MinerAddress>.<OptionalWorkerId> <Option>=<OptionValue>
 * PlatformId: Default is 0. p=0
 * AutoLocal: Default is false. a=false or a=true
 * PoolUrl: Default is http://amoveopool2.com/work   u=http://amoveopool2.com/work
+* SyncKernel: Default is false. Set true for most AMD. sk=true
 * KernelVersion: Default is 3. Available 1, 2, or 3. kv=3
 * DevFeePercent: Default is 2. Available 1 and up. df=2
 * RandomSeed: Deafult is Computer Name + Current Time. r=RaNdOmStRiNg
