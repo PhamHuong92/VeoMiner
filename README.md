@@ -8,9 +8,9 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
   - BlockSize: d=?
   - NumBlocks: n=?
   - AutoLocal: a=0 or a=1
-  - KernelVersion: kv=3 Was a previous veominer faster for you? Try kv=2 or kv=1
+  - KernelVersion: kv=4 Was a previous veominer faster for you? Try kv= 3 or kv=2 or kv=1
 * Why was an older version of veominer was faster?
-  - Kernel optimizations are not faster for every GPU. If an older veominer was faster for your GPU rig, set kv=2 or kv=1
+  - Kernel optimizations are not faster for every GPU. If an older veominer was faster for your GPU rig, set kv=3 or kv=2 or kv=1
 
 ## Windows
 
@@ -45,7 +45,7 @@ veominer.exe <MinerAddress>.<OptionalWorkerId> <Option>=<OptionValue>
 * AutoLocal: Default is false. a=false or a=true
 * PoolUrl: Default is http://amoveopool2.com/work   u=http://amoveopool2.com/work
 * SyncKernel: Default is false. Set true for most AMD. sk=true
-* KernelVersion: Default is 3. Available 1, 2, or 3. kv=3
+* KernelVersion: Default is 4. Available 1, 2, 3 or 4. kv=4
 * DevFeePercent: Default is 2. Available 1 and up. df=2
 * RandomSeed: Deafult is Computer Name + Current Time. r=RaNdOmStRiNg
 
@@ -95,12 +95,12 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 
 ```
 - Ubuntu16
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.0/veominer_Ubuntu16_2.0.tar.gz
-tar -xzvf veominer_Ubuntu16_2.0.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.1/veominer_Ubuntu16_2.1.tar.gz
+tar -xzvf veominer_Ubuntu16_2.1.tar.gz
 
 - Ubuntu17
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.0/veominer_Ubuntu17_2.0.tar.gz
-tar -xzvf veominer_Ubuntu17_2.0.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.1/veominer_Ubuntu17_2.1.tar.gz
+tar -xzvf veominer_Ubuntu17_2.1.tar.gz
 ```
 
 ### Run
