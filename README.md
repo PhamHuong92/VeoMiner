@@ -5,7 +5,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
 * My AMD rigs lock up or crash. Why?
   - Most AMD GPU need to set SyncKernel argument true. Set SyncKernel like this: sk=1
 * Which arguments control hash rates?
-  - BlockSize: d=?
+  - BlockSize: b=?
   - NumBlocks: n=?
   - AutoLocal: a=0 or a=1
   - KernelVersion: kv=4 Was a previous veominer faster for you? Try kv= 3 or kv=2 or kv=1
