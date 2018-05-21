@@ -15,7 +15,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
 ## Windows
 
 ### NVidia Run Dependencies
-* Install Visual Studio 2015
+* [Install Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
 * Install Cuda 9.1 (includes OpenCL)
 
 ### AMD Run Dependencies
