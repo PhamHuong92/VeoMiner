@@ -8,7 +8,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
   - BlockSize: b=?
   - NumBlocks: n=?
   - AutoLocal: a=0 or a=1
-  - KernelVersion: kv=4 Was a previous veominer faster for you? Try kv= 3 or kv=2 or kv=1
+  - KernelVersion: kv=5 Was a previous veominer faster for you? Try kv=4 or kv=3 or kv=2 or kv=1
 * Why was an older version of veominer was faster?
   - Kernel optimizations are not faster for every GPU. If an older veominer was faster for your GPU rig, set kv=3 or kv=2 or kv=1
 * How do I set alternate pools?
@@ -48,10 +48,11 @@ veominer.exe <MinerAddress>.<OptionalWorkerId> <Option>=<OptionValue>
 * PoolUrl: Default is http://amoveopool2.com/work   u=http://amoveopool2.com/work
 * Set Alternate Pools with many u= Example: u=http://amoveopool2.com/work u=http://veopool.pw:8085/work u=http://159.65.120.84:8085
 * SyncKernel: Default is false. Set true for most AMD. sk=true
-* KernelVersion: Default is 4. Available 1, 2, 3 or 4. kv=4
+* KernelVersion: Default is 5. Available 1, 2, 3, 4 or 5. kv=5
 * FailAttemptsSwitch: Switch Pool after fa= fail attempt. Default fa=3
 * ResumePrimarySeconds: Resume primary pool after rp= seconds. Default rp=600
 * DevFeePercent: Default is 2. Available 1 and up. df=2
+* ParallelBuffers: Only for sk=2, set pb=X parallel buffers. Default pb=2
 * RandomSeed: Deafult is Computer Name + Current Time. r=RaNdOmStRiNg
 
 Example 1.5 and below:
@@ -100,16 +101,16 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 
 ```
 - Ubuntu16
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.2/veominer_Ubuntu16_2.2.tar.gz
-tar -xzvf veominer_Ubuntu16_2.2.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.3/veominer_Ubuntu16_2.3.tar.gz
+tar -xzvf veominer_Ubuntu16_2.3.tar.gz
 
 - Ubuntu17
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.2/veominer_Ubuntu17_2.2.tar.gz
-tar -xzvf veominer_Ubuntu17_2.2.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.3/veominer_Ubuntu17_2.3.tar.gz
+tar -xzvf veominer_Ubuntu17_2.3.tar.gz
 
 - Ubuntu18
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.2/veominer_Ubuntu18_2.2.tar.gz
-tar -xzvf veominer_Ubuntu18_2.2.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.3/veominer_Ubuntu18_2.3.tar.gz
+tar -xzvf veominer_Ubuntu18_2.3.tar.gz
 ```
 
 ### Run
