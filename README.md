@@ -2,8 +2,9 @@
 Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This miner is free-to-use with developer fee minimum 1%, default 2%.
 
 ## FAQ
-* My AMD rigs lock up or crash. Why?
-  - Most AMD GPU need to set SyncKernel argument true. Set SyncKernel like this: sk=1
+* My AMD rigs are slow for multiple GPU. Why?
+  - Try sk=2 and 18.3.4 Adrenaline drivers in gpu compute mode for multiple AMD GPU rigs. Alternatively try to run separate instances per GPU with SyncKernel argument sk=1
+* Do I still need to set b=? and n=? with kv=5? No, kv=5 ignores b and n and tunes them automatically to a very good value.  
 * Which arguments control hash rates?
   - BlockSize: b=?
   - NumBlocks: n=?
