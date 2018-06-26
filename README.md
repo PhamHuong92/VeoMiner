@@ -102,12 +102,12 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 
 ```
 - Ubuntu16
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.4/veominer_Ubuntu16_2.4.tar.gz
-tar -xzvf veominer_Ubuntu16_2.4.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu16_2.5.tar.gz
+tar -xzvf veominer_Ubuntu16_2.5.tar.gz
 
 - Ubuntu17
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.4/veominer_Ubuntu17_2.4.tar.gz
-tar -xzvf veominer_Ubuntu17_2.4.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu17_2.5.tar.gz
+tar -xzvf veominer_Ubuntu17_2.5.tar.gz
 
 - Ubuntu18
 wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.3/veominer_Ubuntu18_2.3.tar.gz
