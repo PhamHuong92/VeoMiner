@@ -110,8 +110,8 @@ wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubun
 tar -xzvf veominer_Ubuntu17_2.5.tar.gz
 
 - Ubuntu18
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.3/veominer_Ubuntu18_2.3.tar.gz
-tar -xzvf veominer_Ubuntu18_2.3.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu18_2.5.tar.gz
+tar -xzvf veominer_Ubuntu18_2.5.tar.gz
 ```
 
 ### Run
