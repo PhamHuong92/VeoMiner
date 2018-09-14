@@ -15,6 +15,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
   - Kernel optimizations are not faster for every GPU. If an older veominer was faster for your GPU rig, set kv=3 or kv=2 or kv=1
 * How do I set alternate pools?
   - u=http://amoveopool2.com/work u=http://veopool.pw:8085/work u=http://159.65.120.84:8085
+  - Pool fail over does not work with stratum connection yet
 
 ## Windows
 
@@ -33,7 +34,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
 
 Example 2.0 and up:
 ```
-veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= b=128 n=128 p=0 d=all u=http://amoveopool2.com/work u=http://veopool.pw:8085/work u=http://159.65.120.84:8085
+veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= b=128 n=128 p=0 d=all u=stratum+tcp://stratum.amoveopool.com:8822 diff=9800
 ```
 
 Template 2.0 and up:
@@ -46,8 +47,9 @@ veominer.exe <MinerAddress>.<OptionalWorkerId> <Option>=<OptionValue>
 * SuffixMax: Default is 65536. s=65536
 * PlatformId: Default is 0. p=0
 * AutoLocal: Default is false. a=false or a=true
-* PoolUrl: Default is http://amoveopool2.com/work   u=http://amoveopool2.com/work
-* Set Alternate Pools with many u= Example: u=http://amoveopool2.com/work u=http://veopool.pw:8085/work u=http://159.65.120.84:8085
+* Difficulty: Stratum connection only. Default is pool set. diff=9900
+* PoolUrl: Default is stratum+tcp://stratum.amoveopool.com:8822 u=stratum+tcp://stratum.amoveopool.com:8822
+* Set GetWork Alternate Pools with many u= Example: u=http://amoveopool2.com/work u=http://veopool.pw:8085/work u=http://159.65.120.84:8085  Pool fail over not work with Stratum yet
 * SyncKernel: Default is false. Set true for most AMD. sk=true
 * KernelVersion: Default is 5. Available 1, 2, 3, 4 or 5. kv=5
 * FailAttemptsSwitch: Switch Pool after fa= fail attempt. Default fa=3
@@ -80,7 +82,7 @@ veominer.exe <Address> <DeviceIds> <BlockSize> <NumBlocks> <RandomSeed> <SuffixM
 ### Install dependencies
 
 ```
-sudo apt-get install libcpprest-dev libncurses5-dev libssl-dev unixodbc-dev g++ git
+sudo apt-get install libcpprest-dev libncurses5-dev libssl-dev unixodbc-dev g++ git libcurl4-gnutls-dev libjansson-dev
 ```
 
 ### NVidia Install CUDA9.1 (includes OpenCL)
@@ -102,16 +104,16 @@ sudo apt-get install libclc-amdgcn mesa-opencl-icd
 
 ```
 - Ubuntu16
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu16_2.5.tar.gz
-tar -xzvf veominer_Ubuntu16_2.5.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.6/veominer_Ubuntu16_2.6.tar.gz
+tar -xzvf veominer_Ubuntu16_2.6.tar.gz
 
 - Ubuntu17
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu17_2.5.tar.gz
-tar -xzvf veominer_Ubuntu17_2.5.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.6/veominer_Ubuntu17_2.6.tar.gz
+tar -xzvf veominer_Ubuntu17_2.6.tar.gz
 
 - Ubuntu18
-wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.5/veominer_Ubuntu18_2.5.tar.gz
-tar -xzvf veominer_Ubuntu18_2.5.tar.gz
+wget https://github.com/PhamHuong92/VeoMiner/releases/download/2.6/veominer_Ubuntu18_2.6.tar.gz
+tar -xzvf veominer_Ubuntu18_2.6.tar.gz
 ```
 
 ### Run
