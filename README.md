@@ -89,3 +89,10 @@ Example:
 ```
 ./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= p=0 d=all
 ```
+
+## API
+* GET http://localhost:11363/hashrate
+  - {"0":4503457400,"1":4503457308,"2":4503457108,"3":4503457008,"4":4503457008,"5":4503457008}
+* GET http://localhost:11363/shares
+  - {"accepted":111,"rejected":1}
+
