@@ -25,7 +25,7 @@ Amoveo mining with OpenCL for NVidia and AMD GPU on Windows or Ubuntu. This mine
 
 Example:
 ```
-veominer.exe BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= p=0 d=all u=stratum+tcp://stratum.amoveopool.com:8822
+veominer.exe BOOLfeOfNfSAeLparTsIgIygGp3jxVWwJdeU5tGKKCoaBd8brgaye7WL/2PP+mLUGGYc8G+KLGUeyvApghtydQo= p=0 d=all u=stratum+tcp://stratum.amoveopool.com:8822
 ```
 
 Template:
@@ -87,7 +87,7 @@ tar -xzvf veominer_Ubuntu18_2.8.tar.gz
 
 Example:
 ```
-./veominer BEhisEvznTU6uM+PrmOk62mGfYxe2rJwMTcbUQk1v9alYGS6PKYSczo4297GP401V9DF20YRzaGUYguK3lapWE4= p=0 d=all
+./veominer BOOLfeOfNfSAeLparTsIgIygGp3jxVWwJdeU5tGKKCoaBd8brgaye7WL/2PP+mLUGGYc8G+KLGUeyvApghtydQo= p=0 d=all
 ```
 
 ## API
